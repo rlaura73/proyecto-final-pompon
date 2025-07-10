@@ -1,0 +1,520 @@
+/* -----------------importaciones----------------- */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+/* -----------------normalizacion - reset CSS----------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -----------------codigos colores----------------- */
+.colorinches {
+
+    /* naranja */
+        color: #fae8e0;
+        color: rgba(250,232,224, 1);
+        
+        color: #ffeee8;
+        color: rgba(255,238,232, 1);
+
+        color: #ffdcd0;
+        color: rgba(255,220,208, 1);
+
+        color: #F7D6D0;
+        color: rgba(247,214,208, 1);
+
+        color: #fcb5ac;
+        color: rgba(252,181,172, 1);
+
+        color: #FFAF8F;
+        color: rgba(255,175,143, 1);
+
+        color: #ed8772;
+        color: rgba(237,135,114, 1);
+
+        color: #F27827;
+        color: rgba(242,120,39, 1);
+
+
+
+    /* rosa */
+        color: #FFC5D0;
+        color: rgba(255,197,208, 1);
+
+        color: #ea9ea6;
+        color: rgba(234,158,166, 1);
+
+        color: #ffaebc;
+        color: rgba(255, 174, 188, 1);
+
+        color: #ef7c8e;
+        color: rgba(239,124,142, 1);
+
+        
+
+    /* amarillo */
+        background-color: #FFF1DD;
+        background-color: rgba(255,241,221,1);
+
+        color: #FBE7C6;
+        color: rgba(251, 231, 198, 1);
+            /* tono oscurito */
+            color: #f0caa4;
+            color: rgba(240,202,164, 1);
+
+        color: #FFD27F;
+        color: rgba(255, 210, 127, 1);
+            /* tono oscurito */
+            color: #FCC365;
+            color: rgba(252,195,101, 1);
+
+
+    /* azul */
+        color: #a0e7e5;
+        color: rgba(160,231,229, 1);
+            /* tono oscurito */
+            color: #87bcc7;
+            color: rgba(135,188,199, 1);
+
+        color: #6af2f0;
+        color: rgba(106,242,240, 1);
+
+        color: #04ecf0;
+        color: rgba(4,236,240, 1);
+
+        color: #04d4f0;
+        color: rgba(4,212,240, 1);
+
+        color: #27B5F2;
+        color: rgba(39, 181, 242, 1);
+
+        color: #059dc0;
+        color: rgba(5,157,192, 1);
+
+        color: #23596d;
+        color: rgba(35,89,109, 1);
+    
+    /* body actual */
+    background-color: #FFF1DD;
+    background-color: rgba(255,241,221,1);
+}
+
+
+/* -----------------default - todo el sitio----------------- */
+body {
+    /* background-color: #FFF1DD; */
+    /* background-color: #fae8e0; */
+    /* background-color: #f2eee2; */
+    background-color: #fff;
+    font-family: "Fredoka", sans-serif;
+    color:#000;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* -----------------HEADER - menu navegacion----------------- */
+
+header {
+    background-color: #fff;
+    /* background-color: #FFF1DD; */
+    /* background: #059dc0; */
+    /* background: #fae8e0; */
+    /* background: #F27827; */
+    /* background: #ffdcd0; */
+    /* background: #FBE7C6; */
+    /* background: linear-gradient(50deg,
+    rgba(39, 181, 242, 1) 0%,
+    rgba(96, 197, 240, 1) 23%,
+    rgba(249, 151, 97, 1) 53%,
+    rgba(255, 175, 143, 1) 70%,
+    rgba(253, 187, 118, 1) 100%
+    ); */
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* logo empresa */
+header h1 {
+    padding: 8px;
+    font-size: 60px;
+    /* color: #FFF1DD; */
+    /* color: #F27827; */
+    /* color: #23596d; */
+
+    background-color: rgba(35,89,109, 1);
+    color: #FBE7C6;
+    font-family: 'Pacifico', cursive;
+}
+
+header nav {
+    width: 75%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li.login {
+    margin: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    /* color: #ef7c8e; */
+    /* color: rgba(176, 0, 18, 1); */
+    /* color: #FFF1DD; */
+    color: #23596d;
+    font-size: 20px;
+}
+
+
+/* ---------------------------SECCION PRINCIPAL --------------------------- */
+.hero {
+    height: 490px;
+    width: 100%;
+    background-image: url(../img/a-body/body00.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .hero-desc {
+    /* background-color: rgba(250,232,224,0.7); */
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .hero-desc h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+    /* color: #23596d; */
+    padding: 10px;
+    background-color: rgba(255,255,255,0.7);
+}
+
+.hero .hero-desc h3 {
+    font-family: 'Pacifico', cursive;
+    /* color: #FFF1DD; */
+    background-color: rgba(35,89,109, 1);
+    color: #FBE7C6;
+    padding: 10px;
+}
+
+.hero .hero-desc p {
+    margin-top: 25px;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(250,232,224,0.7);
+}
+
+.hero .hero-desc a {
+    text-decoration: none;
+    font-size: 25px;
+    margin-top: 15px;
+    /* color: #23596d ;
+    border: 2px solid #fff;
+    background-color: rgba(106,242,240, 0.7); */
+}
+
+/* ---------------------------SECCION INTRO--------------------------- */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rev {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.intro .sub-intro {
+    width: 90%;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.intro .sub-intro .sub-intro-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 40px;
+}
+
+.intro .sub-intro .sub-intro-desc h2 {
+    margin-bottom: 30px;
+    font-size: 40px;
+    /* color: #23596d; */
+}
+
+.intro .sub-intro .sub-intro-desc p {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+.intro .sub-intro .sub-intro-img {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 60%;
+}
+
+/* ---------------------------SECCION MEJORES PRENDAS--------------------------- */
+
+.collage {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.collage h2 {
+    background-color: coral;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 50px;
+}
+
+.collage .cont-grilla {
+    padding: 14px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 350px;
+    gap: 20px;
+}
+
+.collage .span-row {
+    grid-row: span 2;
+}
+
+.collage .span-col {
+    grid-column: span 2;
+}
+
+
+.collage .ropa {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.collage .ropa .ropa-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collage .ropa .ropa-titulo {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.39);
+    width: 100%;
+}
+
+.collage .ropa .ropa-titulo h3 {
+    font-size: 1.3em;
+}
+
+/* ---------------------------FOOTER--------------------------- */
+
+footer {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    background-color: rgba(249,151,97, 1);
+    font-size: 45px;
+}
+
+footer .correo {
+    font-size: 65px;
+    font-weight: bold;
+}
+
+/* ---------------------------MEDIA QUERY--------------------------- */
+
+@media screen and (max-width: 1017px) {
+    .intro .sub-intro .sub-intro-desc h2 {
+        font-size: 30px;
+    }
+
+    .intro .sub-intro .sub-intro-desc p {
+        font-size: 18px;
+    }
+
+    .intro .sub-intro .sub-intro-img {
+        width: 450px;
+        height: 350px;
+    }
+
+    .collage h2 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 969px) {
+    .intro .sub-intro .sub-intro-img {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 879px) {
+
+    .collage h2 {
+        font-size: 35px;
+    }
+
+    .intro .sub-intro .sub-intro-img {
+        width: 350px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    header {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    header nav {
+        margin-top: 15px;
+    }
+
+    .intro .sub-intro {
+        width: 100%;
+    }
+
+    .intro .sub-intro .sub-intro-desc {
+        margin: 0 15px;
+    }
+
+
+    .intro .sub-intro .sub-intro-img {
+        height: 100%;
+        border: none;
+        border-radius: 0;
+    }
+
+    .collage .cont-grilla {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .intro .sub-intro {
+        flex-direction: column;
+    }
+
+    .intro .sub-intro .sub-intro-desc h2 {
+        margin-bottom: 15px;
+    }
+
+    .intro .sub-intro .sub-intro-img {
+        margin-top: 20px;
+    }
+
+    .collage h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    header nav ul {
+        justify-content: space-evenly;
+    }
+
+    header nav ul li {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    header nav ul {
+        justify-content: center;
+    }
+
+    header nav ul {
+        justify-content: space-evenly;
+    }
+
+    header nav ul li {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 715px) {
+    header nav ul li {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 457px) {
+    .hero .hero-desc h2 {
+        text-align: center;
+    }
+
+    .collage .cont-grilla {
+        grid-template-columns: 1fr;
+    }
+
+    .collage .span-col {
+        grid-column: span 1;
+    }
+
+    .collage .span-row {
+        grid-row: span 1;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        height: 350px;
+    }
+}
+
