@@ -9,6 +9,7 @@ Está dirigida a personas que buscan explorar o comprar ropa abrigada, cómoda y
 
 ## Apéndice
 
+- Link público del sitio: [https://rlaura73.github.io/proyecto-final-pompon/]
 - Las imágenes utilizadas pertenecen a [https://unsplash.com/es], [https://www.pexels.com/es-es/] .
 - El diseño fue pensado en base a una estética cálida, suave y amigable, reflejando la ternura de la marca.
 - Paleta de colores inspirada en tonos pastel y combinaciones armoniosas para bebés y mascotas.
@@ -24,7 +25,7 @@ Está dirigida a personas que buscan explorar o comprar ropa abrigada, cómoda y
 - Animaciones suaves
 
 
-## Optimizations
+## Optimizaciones
 
 - Estructura del código HTML y CSS organizada en secciones claras
 - Uso de clases semánticas para facilitar la lectura y mantenimiento

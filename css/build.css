@@ -28,19 +28,6 @@ a {
 
 header {
   background-color: #fff;
-  /* background-color: #FFF1DD; */
-  /* background: #059dc0; */
-  /* background: #fae8e0; */
-  /* background: #F27827; */
-  /* background: #ffdcd0; */
-  /* background: #FBE7C6; */
-  /* background: linear-gradient(50deg,
-  rgba(39, 181, 242, 1) 0%,
-  rgba(96, 197, 240, 1) 23%,
-  rgba(249, 151, 97, 1) 53%,
-  rgba(255, 175, 143, 1) 70%,
-  rgba(253, 187, 118, 1) 100%
-  ); */
   padding: 10px !important;
   width: 100%;
   display: flex;
@@ -52,9 +39,9 @@ header {
 }
 header h1 {
   padding: 8px !important;
-  font-size: 40px;
   background-color: rgb(35, 89, 109);
   color: #FBE7C6;
+  font-size: 40px;
   font-family: "Pacifico", cursive;
 }
 header nav ul {
@@ -62,24 +49,23 @@ header nav ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin: 0;
-  padding: 0;
 }
 header nav ul li {
   margin-right: 20px !important;
 }
-header nav ul li .login {
+header nav ul li .li-login {
   margin: 0;
 }
 header nav ul li a {
-  text-decoration: none;
-  /* color: #ef7c8e; */
-  /* color: rgba(176, 0, 18, 1); */
-  /* color: #FFF1DD; */
   color: #23596d;
   font-size: 20px;
+  text-decoration: none;
 }
 
+/* -----------------------------------------------------------------------------------------*/
+/* INDEX */
+/* -----------------------------------------------------------------------------------------*/
+/* -----------------------------------------SECCION HERO------------------------------------*/
 .hero {
   height: 490px;
   background-image: url(../img/a-body/body00.jpg);
@@ -129,6 +115,8 @@ header nav ul li a {
   background-color: rgba(106,242,240, 0.7); */
 }
 
+/* -----------------------------------------------------------------------------SECCION HERO */
+/* SECCION INTRO----------------------------------------------------------------------------- */
 .intro {
   display: flex;
   flex-direction: column;
@@ -140,6 +128,8 @@ header nav ul li a {
   text-align: center;
 }
 .intro .sub-intro {
+  /* separador entre cada seccion */
+  /* margin-top: 40px !important; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -149,6 +139,7 @@ header nav ul li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* separador entre imagen e info */
   margin-right: 35px !important;
 }
 .intro .sub-intro .sub-intro-desc h2 {
@@ -173,9 +164,12 @@ header nav ul li a {
   align-items: center;
 }
 .rev .sub-intro-desc-rev {
+  /* separador entre imagen e info */
   margin-left: 35px !important;
 }
 
+/* -----------------------------------------------------------------------------SECCION INTRO*/
+/* SECCION COLLAGE-----------------------------------------------------------------------------*/
 .collage {
   margin-top: 50px !important;
   text-align: center;
@@ -219,6 +213,17 @@ header nav ul li a {
   font-size: 1.3em;
 }
 
+/* -----------------------------------------------------------------------------SECCION COLLAGE*/
+/* -----------------------------------------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------*/
+/* ROPA-BEBES + ROPA-PETS */
+/* -----------------------------------------------------------------------------------------*/
 .todo-ropa {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -242,24 +247,89 @@ header nav ul li a {
   background-color: #fff;
 }
 
-.empresa {
-  height: 490px;
+/* -----------------------------------------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------*/
+/* ABOUT */
+/* -----------------------------------------------------------------------------------------*/
+.about {
+  /* distribucion elementos */
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  /* separador vertical */
+  margin: 30px 0 !important;
+  /* ------------------------------------------------- */
+  /* SOBRE LA EMPRESA */
+  /* ------------------------------------------------- */
+  /* SOBRE EL DESARROLLADOR */
 }
-.empresa .empresa-img {
-  flex: 1;
-  height: 100%;
+.about .about-empresa {
+  /* distribucion de elementos */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px !important; /* separador lateral */
+  /* ------------------------------------------------- */
+  /* imagen empresa */
+  /* ------------------------------------------------- */
+  /* descripcion empresa */
+}
+.about .about-empresa .ab-emp-img {
+  height: 500px;
   object-fit: cover;
 }
-.empresa .empresa-desc {
-  flex: 1;
-  margin: 0 20px !important;
+.about .about-empresa .ab-emp-desc {
+  margin-left: 15px !important; /* separador entre elementos */
+  /* distribucion de elementos */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* caracteristicas texto */
+  text-align: left;
+  /* titulo principal */
 }
-.empresa .empresa-desc h2 {
-  margin-bottom: 20px !important;
-  font-family: "Pacifico", cursive;
+.about .about-empresa .ab-emp-desc h2 {
+  margin-bottom: 20px !important; /* separador entre elementos */
+}
+.about .about-empresa .ab-emp-desc p::first-line {
+  text-indent: 15px;
+}
+.about .about-dev {
+  margin: 0 30px !important; /* separador entre elementos */
+  /* distribucion de elementos */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* ------------------------------------------------- */
+  /* descripcion desarrollador */
+  /* ------------------------------------------------- */
+  /* imagen desarrollador */
+}
+.about .about-dev .ab-dev-desc {
+  margin-right: 40px !important; /* separador entre elementos */
+  /* distribucion de elementos */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  /* caracteristicas texto */
+  text-align: right;
+  /* titulo principal */
+}
+.about .about-dev .ab-dev-desc h2 {
+  margin-bottom: 20px !important; /* separador entre elementos */
+}
+.about .about-dev .ab-dev-img {
+  height: 350px;
+  object-fit: contain;
 }
 
 footer {
@@ -282,6 +352,7 @@ footer .icon-links .correo {
   font-weight: bold;
 }
 
+/* media queries */
 @media screen and (max-width: 1017px) {
   .intro .sub-intro .sub-intro-img {
     width: 450px;
@@ -305,6 +376,10 @@ footer .icon-links .correo {
   .dev .dev-img {
     height: 85%;
   }
+  /*  -------------------------------------------------PAGINA ABOUT */
+  .about .about-empresa {
+    margin-bottom: 20px !important;
+  }
 }
 @media screen and (max-width: 880px) {
   .intro .sub-intro .sub-intro-desc h2 {
@@ -313,17 +388,26 @@ footer .icon-links .correo {
   .collage .cont-grilla {
     grid-template-columns: 1fr 1fr;
   }
-  .empresa {
-    flex-direction: column-reverse;
-    justify-content: center;
+  /*  -------------------------------------------------PAGINA ABOUT */
+  .about .about-empresa {
+    flex-wrap: wrap-reverse;
   }
-  .empresa .empresa-img {
-    flex: none;
+  .about .about-empresa .ab-emp-desc {
+    align-items: center;
+    text-align: center;
+    margin-left: 0 !important;
+  }
+  .about .about-empresa .ab-emp-img {
+    height: 350px;
+  }
+  .about .about-dev {
+    flex-wrap: wrap;
+  }
+  .about .about-dev .ab-dev-desc {
+    align-items: center;
+    text-align: center;
     margin-bottom: 20px !important;
-  }
-  .empresa .empresa-desc {
-    flex: none;
-    margin: 0 20px !important;
+    margin-right: 0 !important;
   }
 }
 @media screen and (max-width: 850px) {
@@ -374,6 +458,7 @@ footer .icon-links .correo {
   .collage h2 {
     font-size: 40px;
   }
+  /* pagina about */
 }
 @media screen and (max-width: 750px) {
   .intro .sub-intro {
@@ -396,6 +481,16 @@ footer .icon-links .correo {
     grid-auto-rows: 500px;
   }
 }
+@media screen and (max-width: 700px) {
+  /* pagina about */
+  /* .about .about-empresa .ab-empresa-desc {
+  /*     margin: 0 25px !important;
+  /* }
+
+  /* .about .about-dev .ab-dev-desc {
+  /*     margin: 0 25px !important;
+  /* } */
+}
 @media screen and (max-width: 600px) {
   header nav ul li {
     margin-right: 10px !important;
@@ -413,6 +508,10 @@ footer .icon-links .correo {
     flex-direction: column;
     height: 300px;
   }
+  /* pagina about
+  /* .about .about-empresa .ab-empresa-img {
+  /*     width: 500px;
+  /* } */
 }
 @media screen and (max-width: 550px) {
   header nav ul {
@@ -423,6 +522,14 @@ footer .icon-links .correo {
   .hero .hero-desc a {
     font-size: 20px;
   }
+  /* pagina about
+  /* .about .about-empresa {
+  /*     margin: 0 !important;
+  /* }
+
+  /* .about .about-dev {
+  /*     margin: 0 !important;
+  /* } */
 }
 
 /*# sourceMappingURL=build.css.map */

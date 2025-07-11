@@ -1,4 +1,4 @@
-// media queries
+/* media queries */
 
 @media screen and (max-width: 1017px) {
     .intro .sub-intro .sub-intro-img {
@@ -10,6 +10,8 @@
         grid-template-columns: 1fr 1fr;
     }
 }
+
+
 
 @media screen and (max-width: 970px) {
     .intro .sub-intro {
@@ -28,7 +30,14 @@
     .dev .dev-img {
         height: 85%;
     }
+
+    /*  -------------------------------------------------PAGINA ABOUT */
+    .about .about-empresa {
+        margin-bottom: 20px !important;
+    }
 }
+
+  
 
 @media screen and (max-width: 880px) {
     .intro .sub-intro .sub-intro-desc h2 {
@@ -39,34 +48,34 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    .empresa {
-        flex-direction: column-reverse;
-        justify-content: center;
+    /*  -------------------------------------------------PAGINA ABOUT */
+    .about .about-empresa {
+        flex-wrap: wrap-reverse;
     }
 
-    .empresa .empresa-img {
-        flex: none;
+    .about .about-empresa .ab-emp-desc {
+        align-items: center;
+        text-align: center;
+        margin-left: 0 !important;
+    }
+
+    .about .about-empresa .ab-emp-img {
+        height: 350px;
+    }
+
+    .about .about-dev {
+        flex-wrap: wrap;
+    }
+
+    .about .about-dev .ab-dev-desc {
+        align-items: center;
+        text-align: center;
         margin-bottom: 20px !important;
+        margin-right: 0 !important;
     }
-
-    .empresa .empresa-desc {
-        flex: none;
-        margin: 0 20px !important;
-    }
-
-    // .dev {
-    //     flex-direction: column;
-    //     justify-content: center;
-    // }
-
-    // .dev .dev-img {
-    //     flex: none;
-    // }
-
-    // .dev .dev-desc {
-    //     flex: none;
-    // }
 }
+  
+
 
 @media screen and (max-width: 850px) {
     .intro .sub-intro .sub-intro-img {
@@ -79,6 +88,8 @@
         font-size: 16px !important;
     }
 }
+
+
 
 @media screen and (max-width: 790px) {
     header {
@@ -111,6 +122,8 @@
 }
 
 
+
+
 @media screen and (max-width: 770px) {
     header {
         flex-direction: column;
@@ -129,7 +142,13 @@
     .collage h2 {
         font-size: 40px;
     }
+
+    /* pagina about */
 }
+
+
+
+
 
 @media screen and (max-width: 750px) {
     .intro .sub-intro {
@@ -157,6 +176,23 @@
     }
 }
 
+
+
+
+@media screen and (max-width: 700px) {
+    /* pagina about */
+    /* .about .about-empresa .ab-empresa-desc {
+    /*     margin: 0 25px !important;
+    /* }
+
+    /* .about .about-dev .ab-dev-desc {
+    /*     margin: 0 25px !important;
+    /* } */
+}
+
+
+
+
 @media screen and (max-width: 600px) {
     header nav ul li {
         margin-right: 10px !important;
@@ -178,7 +214,16 @@
         flex-direction: column;
         height: 300px;
     }
+
+    /* pagina about
+    /* .about .about-empresa .ab-empresa-img {
+    /*     width: 500px;
+    /* } */
 }
+
+
+
+
 
 @media screen and (max-width: 550px) {
 
@@ -187,8 +232,21 @@
     }
 }
 
+
+
+
+
 @media screen and (max-width: 500px) {
     .hero .hero-desc a {
         font-size: 20px;
     }
+
+    /* pagina about
+    /* .about .about-empresa {
+    /*     margin: 0 !important;
+    /* }
+
+    /* .about .about-dev {
+    /*     margin: 0 !important;
+    /* } */
 }
