@@ -5,11 +5,15 @@
 /* -----------------------------------------SECCION HERO------------------------------------*/
 .hero {
     height: 490px;
+
+    /* mini parrllax */
     background-image: url(../img/a-body/body00.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+
+    /* distribucion de elementos */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,7 +21,8 @@
     
     
     .hero-desc {
-        /* background-color: rgba(250,232,224,0.7); */
+
+        /* distribucion de elementos */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -27,34 +32,45 @@
         h2 {
             font-size: 60px;
             text-transform: uppercase;
-            /* color: #23596d; */
+            
+            /* aplicar color */
+            background-color: rgba(255,255,255,1);
             padding: 10px !important;
-            background-color: rgba(255,255,255,0.7);
+            border: 2px solid #fff;
         }
+
 
         h3 {
             font-family: 'Pacifico', cursive;
-            /* color: #FFF1DD; */
+
+            /* aplicar color */
             background-color: rgba(35,89,109, 1);
-            color: #FBE7C6;
             padding: 10px !important;
+            color: #FBE7C6;
         }
         
+
         p {
             margin-top: 25px !important;
             font-size: 26px;
             text-align: center;
+
+            /* aplicar color */
+            background-color: rgba(255,255,255,1);
             padding: 10px !important;
-            background-color: rgba(250,232,224,0.7);
+            border: 2px solid #fff;
         }
         
+
         a {
             text-decoration: none;
             font-size: 25px;
             margin-top: 15px;
-            /* color: #23596d ;
+
+            /* aplicar color */
+            color: #23596d ;
             border: 2px solid #fff;
-            background-color: rgba(106,242,240, 0.7); */
+            background-color: rgba(106,242,240, 1);
         }
     }
 }
@@ -66,40 +82,46 @@
 
 /* SECCION INTRO----------------------------------------------------------------------------- */
 .intro {
+
+    /* distribucion de elementos div */
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    margin-top: 30px !important;
-    margin-right: 30px !important;
-    margin-left: 30px !important;
+
+    margin: 0 40px !important; /* separador de los bordes laterales */
     text-align: center;
     
     .sub-intro {
-        /* separador entre cada seccion */
-        /* margin-top: 40px !important; */
+        /* separador div */
+        margin-top: 30px !important;
 
+        /* distribucion de elementos img e hijo div */
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        
+
         
         .sub-intro-desc {
+
+            /* distribucion de elementos h2 y p */
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
 
-            /* separador entre imagen e info */
-            margin-right: 35px !important;
+            /* separador entre img y div */
+            margin-right: 30px !important;
             
             
             h2 {
-                margin-bottom: 20px !important;
+                margin-bottom: 20px !important; /* separador entre h2 y p */
                 font-size: 40px;
-                /* color: #23596d; */
+
+                /* aplicar color */
             }
             
+
             p {
                 font-size: 20px !important;
             }
@@ -107,23 +129,59 @@
         
         
         .sub-intro-img {
-            width: 500px;
-            height: 400px;
+            width: 470px;
+            height: 370px;
             object-fit: cover;
+
+            /* por favor no me maten por usar esta propiedad, se los agradezco :') */
             border-radius: 60%;
         }
     }
-}
 
-.rev {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
+    .sub-intro-rev {
 
-    .sub-intro-desc-rev {
-        /* separador entre imagen e info */
+        /* distribucion de elementos img e hijo div*/
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 30px !important; /* separador div */
+        
+
+        .sub-intro-rev-desc {
+            /* separador entre img e hijo div */
             margin-left: 35px !important;
+
+            /* distribucion de elementos h2 y p */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+            h2 {
+                margin-bottom: 20px !important; /* separador entre h2 y p */
+                font-size: 40px;
+
+                /* aplicar color */
+            }
+            
+
+            p {
+                font-size: 20px !important;
+            }
+        }
+
+
+        .sub-intro-rev-img {
+            width: 500px;
+            height: 400px;
+            object-fit: cover;
+
+            /* por favor no me maten por usar esta propiedad, se los agradezco :') */
+            border-radius: 60%;
+        }
     }
 }
 /* -----------------------------------------------------------------------------SECCION INTRO*/
@@ -134,53 +192,64 @@
 
 /* SECCION COLLAGE-----------------------------------------------------------------------------*/
 .collage {
-    margin-top: 50px !important;
-    text-align: center;
+    margin-top: 50px !important; /* separador de seccion intro */
+    text-align: center; /* centrar para cualquier texto */
+
 
     h2 {
-        background-color: coral;
-        text-transform: uppercase;
-        padding: 10px !important;
         font-size: 50px;
+        text-transform: uppercase;
+
+        /* aplicar color */
+        background-color: coral;
+        padding: 10px !important;
     }
 
-    .cont-grilla {
+    .collage-grid {
         padding: 14px !important;
+
+        /* distribucion de elementos */
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-auto-rows: 350px;
         gap: 20px;
-    }
 
-    .span-row {
-        grid-row: span 2;
-    }
 
-    .span-col {
-        grid-column: span 2;
-    }
-
-    .ropa {
-        height: 100%;
-        width: 100%;
-        position: relative;
-
-        .ropa-img {
-            width: 100%;
+        .collg-ropa {
             height: 100%;
-            object-fit: cover;
+            width: 100%;
+            position: relative; /* para posicionar titulo */
+
+
+            .collg-ropa-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .collg-ropa-titulo {
+                width: 100%; /* ocupar todo el espacio de la celda */
+
+                /* posicionar dentro de la celda */
+                position: absolute;
+                bottom: 0;
+
+                /* aplicar color */
+                background-color: rgba(255, 255, 255, 0.39);
+
+
+                h3 {
+                    font-size: 1.3em;
+                }
+            }
         }
 
-        .ropa-titulo {
-            position: absolute;
-            bottom: 0;
-            background-color: rgba(255, 255, 255, 0.39);
-            width: 100%;
+        .collg-ropa-sr2 {
+            grid-row: span 2;
+        }
 
-
-            h3 {
-                font-size: 1.3em;
-            }
+        .collg-ropa-sc2 {
+            grid-column: span 2;
         }
     }
 }
@@ -288,12 +357,6 @@
             /* titulo principal */
             h2 {
                 margin-bottom: 20px !important; /* separador entre elementos */
-            }
-
-            p {
-                &::first-line {
-                    text-indent: 15px;
-                }
             }
         }
     }

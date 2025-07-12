@@ -1,11 +1,48 @@
 /* media queries */
 
+/*  HEADER------------ */
+/*  ---------------------- INDEX */
+/*  ------------------------------- ROPA-BEBES */
+/*  -------------------------------------- ROPA-PETS */
+/*  ----------------------------------------------- ABOUT */
+/*  -------------------------------------------------------- LOGIN */
+/*  Footer------------ */
+
 @media screen and (max-width: 1017px) {
-    .intro .sub-intro .sub-intro-img {
-        width: 450px;
-        height: 350px;
+
+    /*  ---------------------- INDEX */
+    .intro {
+        margin: 0 20px !important;
     }
 
+    .intro .sub-intro .sub-intro-img {
+        width: 400px;
+        height: 300px;
+    }
+
+    .intro .sub-intro .sub-intro-desc h2 {
+        font-size: 35px;
+    }
+
+    .intro .sub-intro .sub-intro-desc p {
+        font-size: 17px;
+    }
+
+    .intro .sub-intro-rev .sub-intro-rev-img {
+        width: 400px;
+        height: 300px;
+    }
+
+    .intro .sub-intro-rev .sub-intro-rev-desc h2 {
+        font-size: 35px;
+    }
+
+    .intro .sub-intro-rev .sub-intro-rev-desc p {
+        font-size: 17px;
+    }
+    
+
+    /*  -------------------------------------------------  */
     .todo-ropa {
         grid-template-columns: 1fr 1fr;
     }
@@ -14,41 +51,150 @@
 
 
 @media screen and (max-width: 970px) {
+
+    /*  ----------------------INDEX */
+    .hero .hero-desc h2 {
+        font-size: 55px;
+    }
+
+    .hero .hero-desc p {
+        font-size: 23px;
+    }
+
+
     .intro .sub-intro {
         margin-top: 20px !important;
     }
 
-    .intro .sub-intro .sub-intro-desc p {
-        font-size: 18px !important;
+    .intro .sub-intro .sub-intro-desc {
+        margin-right: 20px !important;
     }
 
-    .intro .sub-intro .sub-intro-img {
-        width: 400px;
-        height: 300px;
+    .intro .sub-intro-rev .sub-intro-rev-desc {
+        margin-left: 20px !important;
     }
 
-    .dev .dev-img {
-        height: 85%;
-    }
 
-    /*  -------------------------------------------------PAGINA ABOUT */
-    .about .about-empresa {
-        margin-bottom: 20px !important;
-    }
-}
-
-  
-
-@media screen and (max-width: 880px) {
-    .intro .sub-intro .sub-intro-desc h2 {
-        font-size: 30px !important;
-    }
-
-    .collage .cont-grilla {
+    .collage .collage-grid {
         grid-template-columns: 1fr 1fr;
     }
 
-    /*  -------------------------------------------------PAGINA ABOUT */
+
+    /*  ----------------------------------------------- ABOUT */
+    .about .about-empresa {
+        margin-bottom: 20px !important;
+    }
+
+    /*
+    .about .dev .dev-img {
+        height: 85%;
+    }
+    */
+
+
+    /*  Footer------------ */
+    footer {
+        padding: 15px 0 !important;
+    }
+}
+
+
+@media screen and (max-width: 930px) {
+
+    /*  ----------------------INDEX */
+    .intro .sub-intro .sub-intro-desc h2 {
+        font-size: 31px;
+    }
+
+    .intro .sub-intro-rev .sub-intro-rev-desc h2 {
+        font-size: 31px;
+    }
+
+
+    /*  Footer------------ */
+    footer .foot-pompon {
+        margin-right: 30px !important;
+    }
+
+    footer .foot-links iframe {
+        margin-left: 30px !important;
+    }
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+    /*  ----------------------INDEX */
+    .intro {
+        margin: 0 30px !important;
+    }
+
+    .intro .sub-intro {
+        flex-wrap: wrap;
+        margin-top: 35px !important;
+    }
+
+    .intro .sub-intro .sub-intro-desc {
+        margin-right: 0 !important;
+        margin-bottom: 20px !important;
+    }
+
+    .intro .sub-intro-rev {
+        flex-wrap: wrap;
+        margin-top: 35px !important;
+    }
+
+    .intro .sub-intro-rev .sub-intro-rev-desc {
+        margin-left: 0 !important;
+        margin-bottom: 20px !important;
+    }
+
+    
+
+    /*  Footer------------ */
+    footer {
+        justify-content: space-evenly;
+    }
+
+    footer .foot-pompon {
+        margin-right: 0 !important;
+    }
+
+    footer .foot-pompon .foot-pompon-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    footer .foot-links {
+        flex-direction: column;
+    }
+
+    footer .foot-links iframe {
+        margin-left: 0 !important;
+    }
+}
+
+
+
+
+@media screen and (max-width: 880px) {
+
+    /*  ----------------------INDEX */
+    .hero .hero-desc h2 {
+        font-size: 50px;
+    }
+
+    .hero .hero-desc p {
+        font-size: 22px;
+    }
+
+    .hero .hero-desc a {
+        font-size: 20px;
+    }
+
+
+    /*  ----------------------------------------------- ABOUT */
     .about .about-empresa {
         flex-wrap: wrap-reverse;
     }
@@ -78,45 +224,75 @@
 
 
 @media screen and (max-width: 850px) {
-    .intro .sub-intro .sub-intro-img {
-        width: 350px;
-        height: 250px;
-        border-radius: 0;
-    }
 
-    .intro .sub-intro .sub-intro-desc p {
-        font-size: 16px !important;
-    }
-}
-
-
-
-@media screen and (max-width: 790px) {
-    header {
-        position: static;
-    }
-
-    .hero {
-        height: 400px;
-    }
-
+    /*  ----------------------INDEX */
     .hero .hero-desc h2 {
-        font-size: 40px !important;
+        font-size: 45px;
     }
 
     .hero .hero-desc p {
         font-size: 20px;
     }
 
-    .intro .sub-intro .sub-intro-desc {
-        margin-right: 20px !important;
+
+    /*  Footer------------ */
+    footer .foot-pompon .foot-pompon-img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+
+
+@media screen and (max-width: 790px) {
+
+    /*  HEADER------------ */
+    header {
+        position: static;
     }
 
-    .rev .sub-intro-desc-rev {
-        margin-left: 20px !important;
+    /*  ----------------------INDEX */
+    .hero {
+        height: 400px;
     }
 
-    .collage .span-row {
+    .hero .hero-desc h2 {
+        font-size: 40px;
+    }
+
+    .hero .hero-desc p {
+        font-size: 20px;
+    }
+
+
+    .intro .sub-intro .sub-intro-img {
+        width: 350px;
+        height: 250px;
+    }
+
+    .intro .sub-intro .sub-intro-desc h2 {
+        font-size: 29px !important;
+    }
+
+    .intro .sub-intro .sub-intro-desc p {
+        font-size: 1.1em !important;
+    }
+
+    .intro .sub-intro-rev .sub-intro-rev-img {
+        width: 350px;
+        height: 250px;
+    }
+
+    .intro .sub-intro-rev .sub-intro-rev-desc h2 {
+        font-size: 29px !important;
+    }
+
+    .intro .sub-intro-rev .sub-intro-rev-desc p {
+        font-size: 1.1em !important;
+    }
+    
+    
+    .collage .collage-grid .collg-ropa-sr2 {
         grid-row: span 1;
     }
 }
@@ -125,25 +301,27 @@
 
 
 @media screen and (max-width: 770px) {
+
+    /*  HEADER------------ */
     header {
         flex-direction: column;
         justify-content: center;
     }
-
+    
     header h1 {
         margin-bottom: 15px !important;
     }
 
-    .intro .sub-intro .sub-intro-img {
-        width: 300px;
-        height: 200px;
+    header nav ul {
+        justify-content: center;
     }
+
+    
+    /*  ---------------------- INDEX */
 
     .collage h2 {
         font-size: 40px;
     }
-
-    /* pagina about */
 }
 
 
@@ -151,24 +329,7 @@
 
 
 @media screen and (max-width: 750px) {
-    .intro .sub-intro {
-        flex-direction: column;
-        justify-content: center;
-    }
 
-    .intro .sub-intro .sub-intro-desc {
-        margin-bottom: 15px !important;
-    }
-
-    .intro .sub-intro .sub-intro-desc h2 {
-        margin-bottom: 10px !important;
-    }
-
-    .intro .sub-intro .sub-intro-img {
-        width: 350px;
-        height: 250px;
-        border-radius: 60%;
-    }
 
     .todo-ropa {
         grid-template-columns: 1fr;
@@ -180,45 +341,136 @@
 
 
 @media screen and (max-width: 700px) {
-    /* pagina about */
-    /* .about .about-empresa .ab-empresa-desc {
-    /*     margin: 0 25px !important;
-    /* }
-
-    /* .about .about-dev .ab-dev-desc {
-    /*     margin: 0 25px !important;
-    /* } */
-}
-
-
-
-
-@media screen and (max-width: 600px) {
-    header nav ul li {
-        margin-right: 10px !important;
+    /*  ----------------------INDEX */
+    .hero .hero-desc h2 {
+        font-size: 38px;
     }
 
     .hero .hero-desc p {
         font-size: 18px;
     }
 
-    .collage .cont-grilla {
+    .hero .hero-desc a {
+        font-size: 18px;
+    }
+
+
+    /*  Footer------------ */
+    footer .foot-pompon .foot-pompon-img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 650px) {
+    /*  ----------------------INDEX */
+    .hero .hero-desc h2 {
+        font-size: 37px;
+    }
+
+    .hero .hero-desc p {
+        font-size: 17px;
+    }
+
+    .hero .hero-desc a {
+        font-size: 17px;
+    }
+
+
+    .intro .sub-intro .sub-intro-desc p {
+        font-size: 1em !important;
+    }
+
+    .intro .sub-intro-rev .sub-intro-rev-desc p {
+        font-size: 1em !important;
+    }
+
+
+    /*  Footer------------ */
+    footer {
+        flex-direction: column-reverse;
+    }
+
+    footer .foot-pompon {
+        margin-top: 35px !important;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer .foot-pompon .foot-pompon-img {
+        margin-right: 30px !important;
+    }
+
+    footer .foot-links {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer .foot-links .foot-links-ic {
+        margin-right: 30px !important;
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    /*  HEADER------------ */
+    header nav ul li {
+        margin-right: 10px !important;
+    }
+
+
+    /*  ----------------------INDEX */
+    .hero .hero-desc h2 {
+        font-size: 36px;
+    }
+
+    .hero .hero-desc p {
+        font-size: 16px;
+    }
+
+    .hero .hero-desc a {
+        font-size: 16px;
+    }
+
+
+    .intro .sub-intro .sub-intro-img {
+        width: 300px;
+        height: 200px;
+        border-radius: 0;
+    }
+
+    .intro .sub-intro .sub-intro-desc h2 {
+        font-size: 26px !important;
+    }
+
+    .intro .sub-intro-rev .sub-intro-rev-img {
+        width: 300px;
+        height: 200px;
+        border-radius: 0;
+    }
+
+    .intro .sub-intro-rev .sub-intro-rev-desc h2 {
+        font-size: 26px !important;
+    }
+
+
+    .collage .collage-grid {
         grid-template-columns: 1fr;
     }
 
-    .collage .span-col {
+    .collage .collage-grid .collg-ropa-sc2 {
         grid-column: span 1;
     }
 
-    footer {
-        flex-direction: column;
-        height: 300px;
-    }
 
-    /* pagina about
-    /* .about .about-empresa .ab-empresa-img {
-    /*     width: 500px;
-    /* } */
+
+
+    
 }
 
 
@@ -227,8 +479,29 @@
 
 @media screen and (max-width: 550px) {
 
+    /*  HEADER------------ */
     header nav ul {
         flex-direction: column;
+    }
+
+    /*  Footer------------ */
+    footer .foot-pompon {
+        margin-top: 35 !important;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer .foot-pompon .foot-pompon-img {
+        margin-right: 0 !important;
+    }
+
+    footer .foot-links {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer .foot-links .foot-links-ic {
+        margin-right: 0 !important;
     }
 }
 
@@ -237,16 +510,5 @@
 
 
 @media screen and (max-width: 500px) {
-    .hero .hero-desc a {
-        font-size: 20px;
-    }
 
-    /* pagina about
-    /* .about .about-empresa {
-    /*     margin: 0 !important;
-    /* }
-
-    /* .about .about-dev {
-    /*     margin: 0 !important;
-    /* } */
 }

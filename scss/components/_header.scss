@@ -1,61 +1,63 @@
-// menu de navegacion
+/* menu de navegacion */
 
 header {
-    // caracteristicas principales
+    /* caracteristicas principales */
     background-color: #fff;
     padding: 10px !important;
-    width: 100%; // ??
 
-    // distribucion de elementos
+    /* distribucion de elementos h1 y nav */
     display: flex;
-    justify-content: space-between; // para tirar los elementos a las puntas
+    justify-content: space-between; /* para tirar los elementos a las puntas */
     align-items: center;
 
-    // desplazamiento de pagina
+    /* desplazamiento de pagina */
     position: sticky;
     top: 0;
     z-index: 1;
 
 
-    // -------------------------------------------------
-    // TITULO PRINCIPAL = LOGO EMPRESA
-    h1 {
-        // caracteristicas caja
-        padding: 8px !important;
-        background-color: rgba(35,89,109, 1);
 
-        // caracteristicas texto
-        color: #FBE7C6;
+    /* -------------------------------------------------*/
+    /* LOGO EMPRESA */
+    h1 {
         font-size: 40px;
         font-family: 'Pacifico', cursive;
+        
+        /* aplicar color */
+        color: #FBE7C6;
+        background-color: rgba(35,89,109, 1);
+        padding: 8px !important;
     }
 
-    // -------------------------------------------------
-    // MENU NAVEGACION
+
+    
+    /* ------------------------------------------------- */
+    /* MENU NAVEGACION */
     nav {
 
-        // -------------------------------------------------
+        /* ------------------------------------------------- */
         ul {
             list-style: none;
 
-            // distribucion items
+            /* distribucion de elementos li */
             display: flex;
             justify-content: flex-end;
             align-items: center;
 
 
-            // cada item
-            li {
-                // separador para cada item
-                margin-right: 20px !important;
 
-                // clase para un item determinado
+            li {
+                /* separador para cada item */
+                margin-right: 20px !important;
+                
+
+                /* clase para un item determinado */
                 .li-login {
-                    margin: 0;
+                    margin: 0 !important;
                 }
 
 
-                // cada enlace dentro de cada item
+                /* cada enlace dentro de cada item */
                 a {
                     color: #23596d;
                     font-size: 20px;
