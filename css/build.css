@@ -452,6 +452,7 @@ header nav ul .li-login {
 /* LOGIN */
 /* -----------------------------------------------------------------------------------------*/
 .login {
+  height: 500px;
   padding: 25px !important; /* separador de bordes */
   /* mini parallax */
   background-image: url(../img/a-body/body00.jpg);

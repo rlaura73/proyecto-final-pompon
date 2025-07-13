@@ -38,3 +38,11 @@ Está dirigida a personas que buscan explorar o comprar ropa abrigada, cómoda y
 
 - Se usa la palabra clave !important para sobrescribir los estilos de bootstrap
 - Instalar animaciones aos: [npm install aos --save]
+
+
+## Tecnologia utilizada
+- Bootstrap
+- AOS (Animate On Scroll)
+- Google Fonts
+- Node.js
+- npm
