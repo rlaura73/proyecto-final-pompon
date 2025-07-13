@@ -10,18 +10,21 @@
     <meta name="keywords" content="pompon, tienda, ropa, mascotas, invierno, verano, gato, perro, bebe, ">
 
 
-    <!-- Vinculacion bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-
-    <!-- Vinculacion bootstrap icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
 
     <!-- Vinculacion archivo css -->
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="./css/build.css">
+    <!-- Vinculacion bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Vinculacion bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Vinculacion animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Icono de la pestaña -->
     <link rel="shortcut icon" href="./img/b-icons/pompon06.ico" type="image/x-icon">
+
 
     <title>PomPon Ternura</title>
 </head>
@@ -79,51 +82,59 @@
                 <!-- Link de acceso directo a seccion collage -->
                 <a href="#collage">Ver descuentos</a>
             </div>
-
-
+            
         </section>
         <!-- -------------------------------------------------------------------------------->
-
-
-
-
+        
+        
+        
+        
         <!-- --------------------------------Seccion intro-------------------------------- -->
         <section class="intro">
-
+            
             <!-- Descripcion -->
-            <div class="sub-intro">
-                <div class="sub-intro-desc">
-                    <h2>Cada estación, una prenda perfecta</h2>
-                    <p>
-                        Nuestras prendas están diseñadas pensando en cada clima: tejidos livianos y frescos para los días de calor, y materiales térmicos y suaves para los días más fríos. Tu bebé y tu mascota estarán siempre cómodos, sin importar la estación del año.
-                    </p>
+            <div data-aos="fade-up">
+                <div class="sub-intro">
+                    <div class="sub-intro-desc">
+                        <h2>Cada estación, una prenda perfecta</h2>
+                        <p>
+                            Nuestras prendas están diseñadas pensando en cada clima: tejidos livianos y frescos para los días de calor, y materiales térmicos y suaves para los días más fríos. Tu bebé y tu mascota estarán siempre cómodos, sin importar la estación del año.
+                        </p>
+                    </div>
+    
+                    <img src="./img/c-baby/intro-01.jpg" alt="bebe" class="sub-intro-img">
                 </div>
-
-                <img src="./img/c-baby/intro-01.jpg" alt="bebe" class="sub-intro-img">
             </div>
 
+            
             <!-- Descripcion -->
-            <div class="sub-intro-rev">
-                <div class="sub-intro-rev-desc">
-                    <h2>Desde recién nacidos hasta peluditos gigantes</h2>
-                    <p>
-                        Sabemos que cada cuerpo es único. Por eso ofrecemos ropa adaptable, con variedad de talles, cortes cómodos y ajustes pensados tanto para bebés como para mascotas de todos los tamaños. Porque todos merecen vestir bien y sentirse cómodos.
-                    </p>
+            <div data-aos="fade-up">
+                <div class="sub-intro-rev">
+                    <div class="sub-intro-rev-desc">
+                        <h2>Desde recién nacidos hasta peluditos gigantes</h2>
+                        <p>
+                            Sabemos que cada cuerpo es único. Por eso ofrecemos ropa adaptable, con variedad de talles, cortes cómodos y ajustes pensados tanto para bebés como para mascotas de todos los tamaños. Porque todos merecen vestir bien y sentirse cómodos.
+                        </p>
+                    </div>
+    
+                    <img src="./img/d-pets/doggie07.jpg" alt="perros" class="sub-intro-rev-img">
                 </div>
+            </div>
+            
 
-                <img src="./img/d-pets/doggie07.jpg" alt="perros" class="sub-intro-rev-img">
+            <!-- Descripcion -->
+            <div data-aos="fade-up">
+                <div class="sub-intro">
+                    <div class="sub-intro-desc" id="collage">
+                        <h2>Más que ropa: <br> protección y cariño</h2>
+                        <p>
+                            No solo vestimos a quienes más querés, también los cuidamos. Cada prenda está pensada para brindar abrigo, suavidad y libertad, con materiales seguros, respirables y adaptables. Es más que ropa: es una forma de demostrar amor en cada uso, todos los días.
+                        </p>
+                    </div>
+                    <img src="./img/d-pets/gatito07.jpg" alt="gatitos" class="sub-intro-img">
+                </div>
             </div>
 
-            <!-- Descripcion -->
-            <div class="sub-intro">
-                <div class="sub-intro-desc" id="collage">
-                    <h2>Más que ropa: <br> protección y cariño</h2>
-                    <p>
-                        No solo vestimos a quienes más querés, también los cuidamos. Cada prenda está pensada para brindar abrigo, suavidad y libertad, con materiales seguros, respirables y adaptables. Es más que ropa: es una forma de demostrar amor en cada uso, todos los días.
-                    </p>
-                </div>
-                <img src="./img/d-pets/gatito07.jpg" alt="gatitos" class="sub-intro-img">
-            </div>
         </section>
         <!-- -------------------------------------------------------------------------------->
 
@@ -322,9 +333,15 @@
     <!-- --------------------------------------------------------------------------------->
 
 
-
     <!-- Vinculacion bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+
+    <!-- Vinculacion animaciones -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 <!-- Cuerpo de la pagina -->
 

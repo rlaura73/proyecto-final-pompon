@@ -1,15 +1,62 @@
-/* background-color: #FFF1DD; */
-    /* background: #059dc0; */
-    /* background: #fae8e0; */
-    /* background: #F27827; */
-    /* background: #ffdcd0; */
-    /* background: #FBE7C6; */
-    /* background: linear-gradient(50deg,
+/* 
+background: linear-gradient(50deg,
     rgba(39, 181, 242, 1) 0%,
     rgba(96, 197, 240, 1) 23%,
     rgba(249, 151, 97, 1) 53%,
     rgba(255, 175, 143, 1) 70%,
     rgba(253, 187, 118, 1) 100%
     );
-    background-color: rgba(250,232,224,1);
 */
+
+
+/* variables */
+$cod-hex: 
+    #FFF1DD, #fae8e0, #ffdcd0, #FBE7C6,
+    #F27827,
+    #059dc0, #23596d
+;
+
+
+$cod-rgba: rgba(250,232,224,1), rgba(106,242,240, 1), rgba(35,89,109, 1)
+;
+
+
+
+/* MIXIN */
+@mixin flex ($disp, $flex-dir, $just-cont, $align-items) {
+    display: $disp;
+    flex-direction: $flex-dir;
+    justify-content: $just-cont;
+    align-items: $align-items;
+}
+
+@mixin grid ($disp, $col, $auto-row, $gap) {
+    display: $disp;
+    grid-template-columns: $col;
+    grid-auto-rows: $auto-row;
+    gap: $gap;
+}
+
+
+@mixin enlace ($bord-w, $bord-sty, $bord-col, $back-col, $text-col, $pad) {
+    border: $bord-w $bord-sty $bord-col;
+    background-color: $back-col;
+    color: $text-col;
+    padding: $pad !important;
+}
+
+
+
+@mixin img ($ancho, $alto, $obj-fit) {
+    width: $ancho;
+    height: $alto;
+    object-fit: $obj-fit;
+}
+
+
+/* aplicar color */
+@mixin titulo($back-col, $pad, $col) {
+    background-color: $back-col;
+    padding: $pad;
+    color: $col;
+}

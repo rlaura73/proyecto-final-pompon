@@ -24,9 +24,7 @@ header {
         font-family: 'Pacifico', cursive;
         
         /* aplicar color */
-        color: #FBE7C6;
-        background-color: rgba(35,89,109, 1);
-        padding: 8px !important;
+        @include titulo(rgba(35,89,109, 1), 8px, #FBE7C6);
     }
 
 
@@ -40,10 +38,7 @@ header {
             list-style: none;
 
             /* distribucion de elementos li */
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-
+            @include flex (flex, row, flex-end, center);
 
 
             li {
@@ -56,6 +51,14 @@ header {
                     color: #23596d;
                     font-size: 20px;
                     text-decoration: none;
+
+                    /* animaciones */
+                    transition: 1s;
+
+                    &:hover {
+                        @include enlace(2px, solid, #FBE7C6, 
+                            rgba(35,89,109, 1), #FBE7C6, 5px);
+                    }
                 }
             }
 

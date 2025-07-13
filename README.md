@@ -27,7 +27,14 @@ Está dirigida a personas que buscan explorar o comprar ropa abrigada, cómoda y
 
 ## Optimizaciones
 
+- Uso de Bootstrap, aos y google fonts
 - Estructura del código HTML y CSS organizada en secciones claras
 - Uso de clases semánticas para facilitar la lectura y mantenimiento
 - Separación de estilos en un archivo CSS externo
 - Navegación sticky (menú fijo) para mejor experiencia de usuario
+
+
+## Notas a considerar
+
+- Se usa la palabra clave !important para sobrescribir los estilos de bootstrap
+- Instalar animaciones aos: [npm install aos --save]

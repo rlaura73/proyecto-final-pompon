@@ -17,21 +17,14 @@
     );
 
 
-    /* distribucion de elementos */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* distribucion de elementos, uso mixin */
+    @include flex(flex, column, center, center);
     
     
     .hero-desc {
 
-        /* distribucion de elementos */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
+        /* distribucion de elementos, uso mixin */
+        @include flex(flex, column, center, center);
         
         h2 {
             font-size: 60px;
@@ -43,9 +36,7 @@
             font-family: 'Pacifico', cursive;
 
             /* aplicar color */
-            background-color: rgba(35,89,109, 1);
-            padding: 10px !important;
-            color: #FBE7C6;
+            @include titulo(rgba(35,89,109, 1), 10px, #FBE7C6);
         }
         
 
@@ -66,10 +57,17 @@
             margin-top: 15px;
 
             /* aplicar color */
-            color: #23596d ;
-            border: 2px solid #fff;
-            background-color: rgba(106,242,240, 1);
-            padding: 5px !important;
+            @include enlace(2px, solid, #fff, 
+                rgba(106,242,240, 1), #23596d, 5px);
+
+
+            /* animaciones */
+            transition: 1s;
+
+            &:hover {
+                @include enlace(2px, solid, #FBE7C6, 
+                rgba(35,89,109, 1), #FBE7C6, 5px);
+            }
         }
     }
 }
@@ -83,10 +81,7 @@
 .intro {
 
     /* distribucion de elementos div */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex (flex, column, center, center);
 
     margin: 0 40px !important; /* separador de los bordes laterales */
     text-align: center;
@@ -96,18 +91,13 @@
         margin-top: 30px !important;
 
         /* distribucion de elementos img e hijo div */
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex (flex, row, center, center);
 
         
         .sub-intro-desc {
 
             /* distribucion de elementos h2 y p */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include flex (flex, column, center, center);
 
             /* separador entre img y div */
             margin-right: 30px !important;
@@ -128,22 +118,20 @@
         
         
         .sub-intro-img {
-            width: 470px;
-            height: 370px;
-            object-fit: cover;
+            @include img (470px, 370px, cover);
 
             /* por favor no me maten por usar esta propiedad, se los agradezco :') */
             border-radius: 60%;
         }
     }
 
+
+
     .sub-intro-rev {
 
         /* distribucion de elementos img e hijo div*/
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
+        @include flex (flex, row-reverse, center, center);
+
 
         margin-top: 30px !important; /* separador div */
 
@@ -153,10 +141,7 @@
             margin-left: 35px !important;
 
             /* distribucion de elementos h2 y p */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include flex (flex, column, center, center);
 
 
             h2 {
@@ -174,9 +159,7 @@
 
 
         .sub-intro-rev-img {
-            width: 500px;
-            height: 400px;
-            object-fit: cover;
+            @include img (470px, 370px, cover);
 
             /* por favor no me maten por usar esta propiedad, se los agradezco :') */
             border-radius: 60%;
@@ -208,10 +191,7 @@
         padding: 14px !important;
 
         /* distribucion de elementos */
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-auto-rows: 350px;
-        gap: 20px;
+        @include grid (grid, 1fr 1fr 1fr, 350px, 20px);
 
 
         .collg-ropa {
@@ -221,9 +201,7 @@
 
 
             .collg-ropa-img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
+                @include img (100%, 100%, cover);
             }
 
             .collg-ropa-titulo {
@@ -239,12 +217,29 @@
 
                 h3 {
                     font-size: 1.3em;
+                    margin-bottom: 20px !important;
                 }
 
+
+
                 a {
-                    color: #23596d ;
-                    border: 2px solid #fff;
-                    background-color: rgba(106,242,240, 1);
+
+                    @include enlace(2px, solid, #fff, 
+                        rgba(106,242,240, 1), #23596d, 0);
+
+
+                    /* animaciones */
+                    transition: 1s;
+
+                    &:hover {
+                        @include enlace(2px, solid, #FBE7C6, 
+                            rgba(35,89,109, 1), #FBE7C6, 5px);
+                    }
+                }
+
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 1);
                 }
             }
         }
@@ -277,22 +272,17 @@
 .coleccion {
 
     /* distribucion elementos div (prenda) */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 700px;
+    @include grid (grid, 1fr 1fr 1fr, 700px, 2);
 
 
     .coleccion-prenda {
         height: 100%;
         width: 100%;
-        border: 2px solid #fff; /* mini separador entre prendas */
         position: relative; /* posicionar descripcion */
 
 
         .col-prenda-img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
+            @include img (100%, 100%, cover);
         }
 
 
@@ -311,9 +301,16 @@
 
 
             a {
-                color: #000 ;
-                border: 1px solid #000;
-                background-color: rgba(106,242,240, 1);
+                @include enlace(1px, solid, #000, 
+                rgba(106,242,240, 1), #000, 5px);
+
+                /* animaciones */
+                transition: 1s;
+
+                &:hover {
+                    @include enlace(2px, solid, #FBE7C6, 
+                        rgba(35,89,109, 1), #FBE7C6, 5px);
+                }
             }
         }
     }
@@ -333,10 +330,7 @@
 
 .about {
     /* distribucion elementos div (empresa) y div (desarrollador) */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex (flex, column, center, center);
     
     /* separador vertical */
     margin: 30px !important;
@@ -348,9 +342,7 @@
     .about-empresa {
 
         /* distribucion de elementos img y div */
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex (flex, row, center, center);
         
         
         margin: 0 40px !important; /* separador lateral */
@@ -358,8 +350,7 @@
         /* ------------------------------------------------- */
         /* imagen empresa */
         .ab-emp-img {
-            height: 500px;
-            object-fit: cover;
+            @include img (inherit, 500px, cover);
         }
         
         /* ------------------------------------------------- */
@@ -369,10 +360,7 @@
             margin-left: 15px !important; /* separador entre elementos */
             
             /* distribucion de elementos */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
+            @include flex (flex, column, center, flex-start);
             
             /* caracteristicas texto */
             text-align: left;
@@ -395,9 +383,7 @@
         margin: 0 30px !important; /* separador entre elementos div (empresa) y div (desarrollador) */
         
         /* distribucion de elementos */
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex (flex, row, center, center);
         
         
         /* ------------------------------------------------- */
@@ -407,10 +393,7 @@
             margin-right: 40px !important; /* separador entre elementos h2 y p */
             
             /* distribucion de elementos */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-end;
+            @include flex (flex, column, center, flex-end);
             
             /* caracteristicas texto */
             text-align: right;
@@ -425,8 +408,7 @@
         /* ------------------------------------------------- */
         /* imagen desarrollador */
         .ab-dev-img {
-            height: 350px;
-            object-fit: contain;
+            @include img (inherit, 350px, contain);
         }
     }
 }
@@ -458,10 +440,7 @@
     background-attachment: fixed;
 
     /* distribucion de elementos div (sesion) y div (registro) */
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: center;
+    @include flex (flex, row-reverse, space-around, center);
 
 
     .login-sesion {
@@ -472,10 +451,7 @@
 
 
         /* distribucion de elementos h2 y form */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+        @include flex (flex, column, center, flex-start);
 
 
 
@@ -491,10 +467,8 @@
 
 
             /* distribucion de elementos label e input */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
+            @include flex (flex, column, center, flex-start);
+
 
             label {
                 margin-top: 20px !important;
@@ -513,6 +487,14 @@
                 border-style: solid;
                 border-color: rgba(106,242,240, 1);
                 background-color: rgba(255,255,255,0) !important;
+
+                /* animaciones */
+                    transition: 1s;
+
+                    &:hover {
+                        @include enlace(2px, solid, #FBE7C6, 
+                            rgba(35,89,109, 1), #FBE7C6, 5px);
+                    }
             }
 
 
@@ -528,11 +510,18 @@
                 align-items: center;
     
                 a {
-                    
                     /* aplicar color */
-                    border: 2px solid #fff;
-                    background-color: rgba(106,242,240, 1);
-                    padding: 5px !important;
+                    @include enlace(2px, solid, #fff, 
+                        rgba(106,242,240, 1), #23596d, 5px);
+
+                    
+                    /* animaciones */
+                    transition: 1s;
+
+                    &:hover {
+                        @include enlace(2px, solid, #FBE7C6, 
+                            rgba(35,89,109, 1), #FBE7C6, 5px);
+                    }
                 }
             }
         }
@@ -548,10 +537,7 @@
     
 
         /* distribucion de elementos h2 y form */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+        @include flex (flex, column, center, flex-start);
 
 
 
@@ -566,10 +552,9 @@
             margin-top: 20px !important;
     
             /* distribucion de elementos enlace (enviar) y div */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
+            @include flex (flex, column, center, flex-start);
+
+
 
             div {
                 width: 400px;
@@ -581,9 +566,7 @@
                 margin-top: 5px !important; /* separador */
 
                 /* distribucion de elmentos input y label */
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+                @include flex (flex, row, space-between, center);
 
             }
 
@@ -592,15 +575,22 @@
                 margin-top: 20px !important; /* separador */
     
                 /* para acomodar el link al final de la caja */
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
+                @include flex (flex, row, flex-end, center);
     
                 a {
                     /* aplicar color */
-                    border: 2px solid #fff;
-                    background-color: rgba(106,242,240, 1);
-                    padding: 5px !important;
+                    @include enlace(2px, solid, #fff, 
+                        rgba(106,242,240, 1), #23596d, 5px);
+
+
+
+                    /* animaciones */
+                    transition: 1s;
+
+                    &:hover {
+                        @include enlace(2px, solid, #FBE7C6, 
+                            rgba(35,89,109, 1), #FBE7C6, 5px);
+                    }
                 }
             }
         }
