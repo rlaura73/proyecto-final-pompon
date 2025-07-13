@@ -6,6 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- SEO basico -->
+    <meta name="description" content="">
+    <meta name="keywords" content="pompon, tienda, ropa, mascotas, invierno, verano, gato, perro, bebe, ">
+
+
     <!-- Vinculacion bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
@@ -29,8 +34,7 @@
     <header>
 
         <!-- img logo empresa -->
-        <h1>PomPon</h1>
-        <!-- <img src="./img/pompon06-logo.jpeg" alt="logo-PomPon"> -->
+        <a href="#inicio"><h1>PomPon</h1></a>
 
 
         <!-- Menu navegacion -->
@@ -54,10 +58,123 @@
 
 
     <!-- Seccion principal---------------------------------------------------------------- -->
-    <main>
+    <main id="inicio">
+
+        <!-- ordenar formularios -->
+        <section class="login">
+            
+            <!-- formulario iniciar sesion -->
+            <div class="login-sesion">
+                
+                <h2>Iniciar sesion</h2>
+
+                <form action="POST" class="log-sesion-form">
+                    <label for="user">Usuario</label>
+                    <input type="text" name="user" id="user" class="log-sesion-f-inp">
+
+                    <label for="pass">Contrase&ntilde;a</label>
+                    <input type="password" name="pass" id="pass" class="log-sesion-f-inp">
+
+                    <div class="log-se-f-sub">
+                        <a href="../index.html">Ingresar</a>
+                    </div>
+                </form>
+
+            </div>
+
+
+            <!-- formulario registrarse al sitio -->
+            <div class="login-reg">
+
+                <h2>Registrarse</h2>
+    
+                <form action="POST" class="log-reg-form">
+                    
+                    <div class="lreg-form-inp">
+                        <label for="name">Nombre:</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+    
+                    <div class="lreg-form-inp">
+                        <label for="last-name">Apellido:</label>
+                        <input type="text" name="last-name" id="last-name">
+                    </div>
+    
+
+                    <div class="lreg-form-inp">
+                        <label for="entrada">Correo electronico:</label>
+                        <input type="text" name="entrada" id="user">
+                    </div>
+
+                    <div class="lreg-form-inp">
+                        <label for="usuario">Usuario:</label>
+                        <input type="text" name="usuario" id="usuario">
+                    </div>
+    
+                    <div class="lreg-form-inp">
+                        <label for="pass">Contrase&ntilde;a:</label>
+                        <input type="password" name="pass" id="pass">
+                    </div>
+    
+                    <div class="lreg-form-inp">
+                        <label for="re-pass">Confirmar contrase&ntilde;a:</label>
+                        <input type="password" name="re-pass" id="re-pass">
+                    </div>
+
+                    <div class="log-reg-f-sub">
+                        <a href="../index.html" class="">Registrar</a>
+                    </div>
+
+                </form>
+                
+            </div>
+
+
+        </section>
+
+
+        <!-- 
         
+        <div class="lreg-form-inp">
+                        <label for="name">Nombre:</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+    
+                    <div class="lreg-form-inp">
+                        <label for="last-name">Apellido:</label>
+                        <input type="text" name="last-name" id="last-name">
+                    </div>
+    
+
+                    <div class="lreg-form-inp">
+                        <label for="entrada">Correo electronico:</label>
+                        <input type="text" name="entrada" id="user">
+                    </div>
+
+                    <div class="lreg-form-inp">
+                        <label for="usuario">Usuario:</label>
+                        <input type="text" name="usuario" id="usuario">
+                    </div>
+    
+                    <div class="lreg-form-inp">
+                        <label for="pass">Contrase&ntilde;a:</label>
+                        <input type="password" name="pass" id="pass">
+                    </div>
+    
+                    <div class="lreg-form-inp">
+                        <label for="re-pass">Confirmar contrase&ntilde;a:</label>
+                        <input type="password" name="re-pass" id="re-pass">
+                    </div>
+
+                    <div class="log-reg-f-sub">
+                        <a href="../index.html" class="">Registrar</a>
+                    </div>
+        
+        
+        -->
+
     </main>
-    <!-- ---------------------------------------------------------------- Seccion principal-->
+    <!-- ---------------------------------------------------------------- -->
 
 
 
@@ -66,7 +183,7 @@
 
         <div class="foot-pompon">
             <img src="../img/pompon06-logo.jpeg" alt="logo-PomPon" class="foot-pompon-img">
-            <p>&copy; PomPon - Todos los derechos reservados &trade; &reg;</p>
+            <p>Copyright &copy; 2025 PomPon<br>Todos los derechos reservados &trade; &reg;</p>
         </div>
 
         <div class="foot-links">

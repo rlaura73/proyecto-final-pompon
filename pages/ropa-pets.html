@@ -6,6 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- SEO basico -->
+    <meta name="description" content="">
+    <meta name="keywords" content="pompon, tienda, ropa, mascotas, invierno, verano, gato, perro, bebe, ">
+
     <!-- Vinculacion bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
@@ -29,8 +33,7 @@
     <header>
 
         <!-- img logo empresa -->
-        <h1>PomPon</h1>
-        <!-- <img src="./img/pompon06-logo.jpeg" alt="logo-PomPon"> -->
+        <a href="#inicio"><h1>PomPon</h1></a>
 
 
         <!-- Menu navegacion -->
@@ -54,13 +57,17 @@
 
 
     <!-- Seccion principal---------------------------------------------------------------- -->
-    <main>
+    <main id="inicio">
+
+        <!-- elementos bootstrap: barra busqueda + dropdown -->
         <section class="mb-3 mt-4 ms-3 container">
+
             <div class="row">
-                <form action="post" class="col-5">
+
+                <form action="post" class="col">
                     <input class="form-control" type="text" placeholder="Buscar..." aria-label="default input example">
                 </form>
-
+                
                 <div class="dropdown col">
                     <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Filtrar
@@ -73,14 +80,17 @@
                     </ul>
                 </div>
             </div>
+
         </section>
 
-        <section class="todo-ropa mb-3">
-            <!-- prenda 01 ---------------------------------------------------------------- -->
-            <div class="prenda">
-                <img src="../img/d-pets/ropa-gato.jpg" alt="01-ropa-gato" class="prenda-img">
 
-                <div class="prenda-desc">
+
+        <section class="coleccion mb-3">
+            <!-- prenda 01 ---------------------------------------------------------------- -->
+            <div class="coleccion-prenda">
+                <img src="../img/d-pets/ropa-gato.jpg" alt="01-buzo-pompon" class="col-prenda-img">
+
+                <div class="col-prenda-desc">
                     <h2>Buzo con pompones</h2>
                     <p>Color azul. Precio: $17.900</p>
                     <a href="./login.html">Comprar</a>
@@ -88,10 +98,10 @@
             </div>
 
             <!-- prenda 02 ---------------------------------------------------------------- -->
-            <div class="prenda">
-                <img src="../img/d-pets/ropa-perro-01.jpg" alt="02-ropa-perro" class="prenda-img">
+            <div class="coleccion-prenda">
+                <img src="../img/d-pets/ropa-perro-01.jpg" alt="02-buzo-capucha" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Buzo con capucha</h2>
                     <p>Color amarillo. Precio: $11.500</p>
                     <a href="./login.html">Comprar</a>
@@ -99,10 +109,10 @@
             </div>
 
             <!-- prenda 03 -->
-            <div class="prenda">
-                <img src="../img/d-pets/ropa-perro-02.jpg" alt="03-ropa-perro" class="prenda-img">
+            <div class="coleccion-prenda">
+                <img src="../img/d-pets/ropa-perro-02.jpg" alt="03-pijama-celeste" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Pijama con estampado</h2>
                     <p>Color celeste. Precio: $11.000</p>
                     <a href="./login.html">Comprar</a>
@@ -110,10 +120,10 @@
             </div>
 
             <!-- prenda 04 -->
-            <div class="prenda">
-                <img src="../img/d-pets/ropa-perro-03.jpg" alt="04-ropa-perro" class="prenda-img">
+            <div class="coleccion-prenda">
+                <img src="../img/d-pets/ropa-perro-03.jpg" alt="04-campera-verde" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Campera de algod&oacute;n</h2>
                     <p>Color verde. Precio: $22.000</p>
                     <a href="./login.html">Comprar</a>
@@ -122,10 +132,10 @@
 
 
             <!-- prenda 05 -->
-            <div class="prenda">
-                <img src="../img/d-pets/ropa-perro-04.jpg" alt="05-ropa-perro" class="prenda-img">
+            <div class="coleccion-prenda">
+                <img src="../img/d-pets/ropa-perro-04.jpg" alt="05-pijama-amarillo" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Pijama divertido</h2>
                     <p>Color amarillo. Precio: $12.000</p>
                     <a href="./login.html">Comprar</a>
@@ -134,10 +144,10 @@
 
 
             <!-- prenda 06 -->
-            <div class="prenda">
-                <img src="../img/d-pets/ropa-perro-05.jpg" alt="06-ropa-perro" class="prenda-img">
+            <div class="coleccion-prenda">
+                <img src="../img/d-pets/ropa-perro-05.jpg" alt="06-sweater-xmas" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Sweater navide&ntilde;o</h2>
                     <p>Color rojo. Precio: $21.450</p>
                     <a href="./login.html">Comprar</a>
@@ -146,10 +156,10 @@
 
 
             <!-- prenda 07 -->
-            <div class="prenda">
-                <img src="../img/d-pets/ropa-perro-06.jpg" alt="07-ropa-perro" class="prenda-img">
+            <div class="coleccion-prenda">
+                <img src="../img/d-pets/ropa-perro-06.jpg" alt="07-camiseta-gris" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Camiseta con estampado</h2>
                     <p>Color gris. Precio: $18.000</p>
                     <a href="./login.html">Comprar</a>
@@ -158,10 +168,10 @@
 
 
             <!-- prenda 08 -->
-            <div class="prenda">
-                <img src="../img/d-pets/ropa-perro-07.jpg" alt="08-ropa-perro" class="prenda-img">
+            <div class="coleccion-prenda">
+                <img src="../img/d-pets/ropa-perro-07.jpg" alt="08-sweater-2" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Doble sweater navide&ntilde;o</h2>
                     <p>Color rojo. Precio: $41.000</p>
                     <a href="./login.html">Comprar</a>
@@ -170,10 +180,10 @@
 
 
             <!-- prenda 09 -->
-            <div class="prenda">
-                <img src="../img/d-pets/ropa-perro-08.jpg" alt="09-ropa-perro" class="prenda-img">
+            <div class="coleccion-prenda">
+                <img src="../img/d-pets/ropa-perro-08.jpg" alt="09-gorro-marron" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Gorro de peluche con orejas</h2>
                     <p>Color marr&oacute;n. Precio: $19.000</p>
                     <a href="./login.html">Comprar</a>
@@ -181,10 +191,10 @@
             </div>
 
             <!-- prenda 10 -->
-            <div class="prenda">
-                <img src="../img/d-pets/ropa-perro-01.jpg" alt="10-ropa-perro" class="prenda-img">
+            <div class="coleccion-prenda">
+                <img src="../img/d-pets/ropa-perro-01.jpg" alt="10-buzo-amarillo" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Buzo de marca</h2>
                     <p>Color amarillo blanco. Precio: $25.000</p>
                     <a href="./login.html">Comprar</a>
@@ -193,10 +203,10 @@
 
 
             <!-- prenda 11 -->
-            <div class="prenda">
-                <img src="../img/d-pets/ropa-perro-02a.jpg" alt="11-ropa-perro" class="prenda-img">
+            <div class="coleccion-prenda">
+                <img src="../img/d-pets/ropa-perro-02a.jpg" alt="11-pijama-amarillo" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Pijamita</h2>
                     <p>Color amarillo. Precio: $10.000</p>
                     <a href="./login.html">Comprar</a>
@@ -204,10 +214,10 @@
             </div>
 
             <!-- prenda 12 -->
-            <div class="prenda">
-                <img src="../img/d-pets/ropa-perro-03.jpg" alt="12-ropa-perro" class="prenda-img">
+            <div class="coleccion-prenda">
+                <img src="../img/d-pets/ropa-perro-03.jpg" alt="12-campera-verde" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Campera a bot&oacute;n</h2>
                     <p>Color verde. Precio: $19.500</p>
                     <a href="./login.html">Comprar</a>
@@ -215,10 +225,10 @@
             </div>
 
             <!-- prenda 13 -->
-            <div class="prenda">
-                <img src="../img/d-pets/ropa-perro-04.jpg" alt="13-ropa-perro" class="prenda-img">
+            <div class="coleccion-prenda">
+                <img src="../img/d-pets/ropa-perro-04.jpg" alt="13-pijama-turquesa" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Pijama polar</h2>
                     <p>Color turquesa. Precio: $15.000</p>
                     <a href="./login.html">Comprar</a>
@@ -226,10 +236,10 @@
             </div>
 
             <!-- prenda 14 -->
-            <div class="prenda">
-                <img src="../img/d-pets/ropa-perro-05.jpg" alt="14-ropa-perro" class="prenda-img">
+            <div class="coleccion-prenda">
+                <img src="../img/d-pets/ropa-perro-05.jpg" alt="14-sweater-rojo" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Sweater con peluche</h2>
                     <p>Color rojo fuerte. Precio: $23.000</p>
                     <a href="./login.html">Comprar</a>
@@ -237,10 +247,10 @@
             </div>
 
             <!-- prenda 15 -->
-            <div class="prenda">
-                <img src="../img/d-pets/ropa-perro-06.jpg" alt="15-ropa-perro" class="prenda-img">
+            <div class="coleccion-prenda">
+                <img src="../img/d-pets/ropa-perro-06.jpg" alt="15-camiseta-polar" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Camiseta polar</h2>
                     <p>Color blanco. Precio: $15.000</p>
                     <a href="./login.html">Comprar</a>
@@ -248,10 +258,10 @@
             </div>
 
             <!-- prenda 16 -->
-            <div class="prenda">
-                <img src="../img/d-pets/ropa-perro-07.jpg" alt="16-ropa-perro" class="prenda-img">
+            <div class="coleccion-prenda">
+                <img src="../img/d-pets/ropa-perro-07.jpg" alt="16-conjunto" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Conjunto sweater</h2>
                     <p>Color carmes&iacute;. Precio: $23.500</p>
                     <a href="./login.html">Comprar</a>
@@ -259,10 +269,10 @@
             </div>
 
             <!-- prenda 17 -->
-            <div class="prenda">
-                <img src="../img/d-pets/ropa-perro-08.jpg" alt="17-ropa-perro" class="prenda-img">
+            <div class="coleccion-prenda">
+                <img src="../img/d-pets/ropa-perro-08.jpg" alt="17-gorro-oscuro" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Gorrito con orejas de oso</h2>
                     <p>Color oscuro. Precio: $23.000</p>
                     <a href="./login.html">Comprar</a>
@@ -270,10 +280,10 @@
             </div>
 
             <!-- prenda 18 -->
-            <div class="prenda">
-                <img src="../img/d-pets/ropa-perro.jpeg" alt="18-ropa-perro" class="prenda-img">
+            <div class="coleccion-prenda">
+                <img src="../img/d-pets/ropa-perro.jpeg" alt="18-buzo-capucha" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Buzo con capucha</h2>
                     <p>Tejido a mano. Precio: $20.900</p>
                     <a href="./login.html">Comprar</a>
@@ -281,7 +291,8 @@
             </div>
         </section>
 
-        <!-- paginacion bootstrap -->
+
+        <!-- elementos bootstrap: paginacion -->
         <section class="mb-3">
             <nav aria-label="Page navigation example">
                 <ul class="pagination justify-content-center">
@@ -323,7 +334,7 @@
 
         <div class="foot-pompon">
             <img src="../img/pompon06-logo.jpeg" alt="logo-PomPon" class="foot-pompon-img">
-            <p>&copy; PomPon - Todos los derechos reservados &trade; &reg;</p>
+            <p>Copyright &copy; 2025 PomPon - Todos los derechos reservados &trade; &reg;</p>
         </div>
 
         <div class="foot-links">

@@ -49,20 +49,21 @@ header {
             li {
                 /* separador para cada item */
                 margin-right: 20px !important;
+
                 
-
-                /* clase para un item determinado */
-                .li-login {
-                    margin: 0 !important;
-                }
-
-
                 /* cada enlace dentro de cada item */
                 a {
                     color: #23596d;
                     font-size: 20px;
                     text-decoration: none;
                 }
+            }
+
+
+
+            /* clase para un item determinado */
+            .li-login {
+                margin: 0 !important;
             }
         }
     }

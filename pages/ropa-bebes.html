@@ -6,6 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- SEO basico -->
+    <meta name="description" content="">
+    <meta name="keywords" content="pompon, tienda, ropa, mascotas, invierno, verano, gato, perro, bebe, ">
+
     <!-- Vinculacion bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
@@ -29,8 +33,7 @@
     <header>
 
         <!-- img logo empresa -->
-        <h1>PomPon</h1>
-        <!-- <img src="./img/pompon06-logo.jpeg" alt="logo-PomPon"> -->
+        <a href="#inicio"><h1>PomPon</h1></a>
 
 
         <!-- Menu navegacion -->
@@ -53,10 +56,13 @@
 
 
     <!-- Seccion principal---------------------------------------------------------------- -->
-    <main>
+    <main id="inicio">
         
+        <!-- elementos bootstrap: barra busqueda + dropdown -->
         <section class="mb-3 mt-4 ms-3 container">
+
             <div class="row">
+
                 <form action="post" class="col-5">
                     <input class="form-control" type="text" placeholder="Buscar..." aria-label="default input example">
                 </form>
@@ -71,47 +77,56 @@
                     </ul>
                 </div>
             </div>
+
         </section>
 
-        <section class="todo-ropa mb-3">
-            <!-- prenda 01 ---------------------------------------------------------------- -->
-            <div class="prenda">
-                <img src="../img/c-baby/ropa-bebe-01.jpg" alt="01-" class="prenda-img">
 
-                <div class="prenda-desc">
+        <!-- galeria ropa -->
+        <section class="coleccion mb-3">
+
+            <!-- prenda 01 ---------------------------------------------------------------- -->
+            <div class="coleccion-prenda">
+
+                <img src="../img/c-baby/ropa-bebe-01.jpg" alt="01-remera-amarilla" class="col-prenda-img">
+
+                <div class="col-prenda-desc">
                     <h2>Remera mangas cortas</h2>
                     <p>Color amarillo. Precio: $19.900</p>
                     <a href="./login.html">Comprar</a>
                 </div>
+
             </div>
 
-            <!-- prenda 02 ---------------------------------------------------------------- -->
-            <div class="prenda">
-                <img src="../img/c-baby/ropa-bebe-02.jpg" alt="02-" class="prenda-img">
 
-                <div class="prenda-desc">
+            <!-- prenda 02 ---------------------------------------------------------------- -->
+            <div class="coleccion-prenda">
+                <img src="../img/c-baby/ropa-bebe-02.jpg" alt="02-gorro-orejas" class="col-prenda-img">
+
+                <div class="col-prenda-desc">
                     <h2>Gorro con orejas de conejo</h2>
                     <p>Color blanco. Precio: $8.500</p>
                     <a href="./login.html">Comprar</a>
                 </div>
             </div>
 
-            <!-- prenda 03 -->
-            <div class="prenda">
-                <img src="../img/c-baby/ropa-bebe-03.jpg" alt="03-" class="prenda-img">
 
-                <div class="prenda-desc">
+            <!-- prenda 03 ---------------------------------------------------------------- -->
+            <div class="coleccion-prenda">
+                <img src="../img/c-baby/ropa-bebe-03.jpg" alt="03-gorro-pompon" class="col-prenda-img">
+
+                <div class="col-prenda-desc">
                     <h2>Gorro pomp&oacute;n</h2>
                     <p>Color gris oscuro. Precio: $8.350</p>
                     <a href="./login.html">Comprar</a>
                 </div>
             </div>
 
-            <!-- prenda 04 -->
-            <div class="prenda">
-                <img src="../img/c-baby/ropa-bebe-04.jpg" alt="04-" class="prenda-img">
 
-                <div class="prenda-desc">
+            <!-- prenda 04 ---------------------------------------------------------------- -->
+            <div class="coleccion-prenda">
+                <img src="../img/c-baby/ropa-bebe-04.jpg" alt="04-mameluco-polar" class="col-prenda-img">
+
+                <div class="col-prenda-desc">
                     <h2>Memeluco polar con orejitas</h2>
                     <p>Color gris. Precio: $22.000</p>
                     <a href="./login.html">Comprar</a>
@@ -119,11 +134,11 @@
             </div>
 
 
-            <!-- prenda 05 -->
-            <div class="prenda">
-                <img src="../img/c-baby/ropa-bebe-05.jpg" alt="05-" class="prenda-img">
+            <!-- prenda 05 ---------------------------------------------------------------- -->
+            <div class="coleccion-prenda">
+                <img src="../img/c-baby/ropa-bebe-05.jpg" alt="05-combo-inv" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Bufanda, guantes, gorro</h2>
                     <p>Color cremita / marr&oacute;n claro. Precio: $41.000</p>
                     <a href="./login.html">Comprar</a>
@@ -131,11 +146,11 @@
             </div>
 
 
-            <!-- prenda 06 -->
-            <div class="prenda">
-                <img src="../img/c-baby/ropa-bebe-06.jpg" alt="06-" class="prenda-img">
+            <!-- prenda 06 ---------------------------------------------------------------- -->
+            <div class="coleccion-prenda">
+                <img src="../img/c-baby/ropa-bebe-06.jpg" alt="06-pijama-celeste" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Pijamita</h2>
                     <p>Color celeste claro. Precio: $21.450</p>
                     <a href="./login.html">Comprar</a>
@@ -143,11 +158,11 @@
             </div>
 
 
-            <!-- prenda 07 -->
-            <div class="prenda">
-                <img src="../img/c-baby/ropa-bebe-07.jpg" alt="07-" class="prenda-img">
+            <!-- prenda 07 ---------------------------------------------------------------- -->
+            <div class="coleccion-prenda">
+                <img src="../img/c-baby/ropa-bebe-07.jpg" alt="07-jardinero-gris" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Jardinero</h2>
                     <p>Color gris. Precio: $18.000</p>
                     <a href="./login.html">Comprar</a>
@@ -155,11 +170,11 @@
             </div>
 
 
-            <!-- prenda 08 -->
-            <div class="prenda">
-                <img src="../img/c-baby/ropa-bebe-08.jpg" alt="08-" class="prenda-img">
+            <!-- prenda 08 ---------------------------------------------------------------- -->
+            <div class="coleccion-prenda">
+                <img src="../img/c-baby/ropa-bebe-08.jpg" alt="08-rompeviento" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Rompeviento con orejitas</h2>
                     <p>Color naranja. Precio: $30.000</p>
                     <a href="./login.html">Comprar</a>
@@ -167,22 +182,22 @@
             </div>
 
 
-            <!-- prenda 09 -->
-            <div class="prenda">
-                <img src="../img/c-baby/ropa-bebe-09.jpg" alt="09-" class="prenda-img">
+            <!-- prenda 09 ---------------------------------------------------------------- -->
+            <div class="coleccion-prenda">
+                <img src="../img/c-baby/ropa-bebe-09.jpg" alt="09-body-rayas" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Body a rayas</h2>
                     <p>Color celeste. Precio: $22.000</p>
                     <a href="./login.html">Comprar</a>
                 </div>
             </div>
 
-            <!-- prenda 10 -->
-            <div class="prenda">
-                <img src="../img/c-baby/ropa-bebe-10.jpg" alt="10-" class="prenda-img">
+            <!-- prenda 10 ---------------------------------------------------------------- -->
+            <div class="coleccion-prenda">
+                <img src="../img/c-baby/ropa-bebe-10.jpg" alt="10-conjunto" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Conjunto invierno</h2>
                     <p>Color amarillo pato. Precio: $30.000</p>
                     <a href="./login.html">Comprar</a>
@@ -190,88 +205,88 @@
             </div>
 
 
-            <!-- prenda 11 -->
-            <div class="prenda">
-                <img src="../img/c-baby/ropa-bebe-11.jpg" alt="11-" class="prenda-img">
+            <!-- prenda 11 ---------------------------------------------------------------- -->
+            <div class="coleccion-prenda">
+                <img src="../img/c-baby/ropa-bebe-11.jpg" alt="11-gorrito-gris" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Gorrito a raya con pomp&oacute;n</h2>
                     <p>Color gris. Precio: $9.900</p>
                     <a href="./login.html">Comprar</a>
                 </div>
             </div>
 
-            <!-- prenda 12 -->
-            <div class="prenda">
-                <img src="../img/c-baby/ropa-bebe-12.jpg" alt="12-" class="prenda-img">
+            <!-- prenda 12 ---------------------------------------------------------------- -->
+            <div class="coleccion-prenda">
+                <img src="../img/c-baby/ropa-bebe-12.jpg" alt="12-mameluco-blanco" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Mameluco con cierre</h2>
                     <p>Color blanco. Precio: $21.000</p>
                     <a href="./login.html">Comprar</a>
                 </div>
             </div>
 
-            <!-- prenda 13 -->
-            <div class="prenda">
-                <img src="../img/c-baby/ropa-bebe-13.jpg" alt="13-" class="prenda-img">
+            <!-- prenda 13 ---------------------------------------------------------------- -->
+            <div class="coleccion-prenda">
+                <img src="../img/c-baby/ropa-bebe-13.jpg" alt="13-vestido-blanco" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Vestido</h2>
                     <p>Color blanco. $15.000</p>
                     <a href="./login.html">Comprar</a>
                 </div>
             </div>
 
-            <!-- prenda 14 -->
-            <div class="prenda">
-                <img src="../img/c-baby/ropa-bebe-14.jpg" alt="14-" class="prenda-img">
+            <!-- prenda 14 ---------------------------------------------------------------- -->
+            <div class="coleccion-prenda">
+                <img src="../img/c-baby/ropa-bebe-14.jpg" alt="14-conjunto-azul" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Conjunto a cierre</h2>
                     <p>Color azul oscuro. Precio: $23.000</p>
                     <a href="./login.html">Comprar</a>
                 </div>
             </div>
 
-            <!-- prenda 15 -->
-            <div class="prenda">
-                <img src="../img/c-baby/ropa-bebe-15.jpg" alt="15-" class="prenda-img">
+            <!-- prenda 15 ---------------------------------------------------------------- -->
+            <div class="coleccion-prenda">
+                <img src="../img/c-baby/ropa-bebe-15.jpg" alt="15-gorro-pompon" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Gorro con pompones</h2>
                     <p>Color rosa. Precio: $11.000</p>
                     <a href="./login.html">Comprar</a>
                 </div>
             </div>
 
-            <!-- prenda 16 -->
-            <div class="prenda">
-                <img src="../img/c-baby/ropa-bebe-16.jpg" alt="16-" class="prenda-img">
+            <!-- prenda 16 ---------------------------------------------------------------- -->
+            <div class="coleccion-prenda">
+                <img src="../img/c-baby/ropa-bebe-16.jpg" alt="16-conjunto-floral" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Conjunto floral</h2>
                     <p>Color blanco. Precio: $23.500</p>
                     <a href="./login.html">Comprar</a>
                 </div>
             </div>
 
-            <!-- prenda 17 -->
-            <div class="prenda">
-                <img src="../img/c-baby/ropa-bebe-17.jpg" alt="17-" class="prenda-img">
+            <!-- prenda 17 ---------------------------------------------------------------- -->
+            <div class="coleccion-prenda">
+                <img src="../img/c-baby/ropa-bebe-17.jpg" alt="17-vestido-verano" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Vestido verano</h2>
                     <p>Color blanco. Precio: $24.000</p>
                     <a href="./login.html">Comprar</a>
                 </div>
             </div>
 
-            <!-- prenda 18 -->
-            <div class="prenda">
-                <img src="../img/c-baby/ropa-bebe-18.jpg" alt="18-" class="prenda-img">
+            <!-- prenda 18 ---------------------------------------------------------------- -->
+            <div class="coleccion-prenda">
+                <img src="../img/c-baby/ropa-bebe-18.jpg" alt="18-gorro-rayas" class="col-prenda-img">
 
-                <div class="prenda-desc">
+                <div class="col-prenda-desc">
                     <h2>Gorro a rayas</h2>
                     <p>Color marr&oacute;n. Precio: $9.900</p>
                     <a href="./login.html">Comprar</a>
@@ -279,7 +294,8 @@
             </div>
         </section>
 
-        <!-- paginacion bootstrap -->
+
+        <!-- elementos bootstrap: paginacion -->
         <section class="mb-3">
             <nav aria-label="Page navigation example">
                 <ul class="pagination justify-content-center">
@@ -316,12 +332,13 @@
     <!-- ---------------------------------------------------------------- Seccion principal-->
 
 
+
     <!-- --------------------------------Pie de pagina-------------------------------- -->
     <footer>
 
         <div class="foot-pompon">
             <img src="../img/pompon06-logo.jpeg" alt="logo-PomPon" class="foot-pompon-img">
-            <p>&copy; PomPon - Todos los derechos reservados &trade; &reg;</p>
+            <p>Copyright &copy; 2025 PomPon - Todos los derechos reservados &trade; &reg;</p>
         </div>
 
         <div class="foot-links">

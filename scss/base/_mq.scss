@@ -40,19 +40,67 @@
     .intro .sub-intro-rev .sub-intro-rev-desc p {
         font-size: 17px;
     }
-    
 
-    /*  -------------------------------------------------  */
-    .todo-ropa {
-        grid-template-columns: 1fr 1fr;
+
+    /*  ------------------------------- ROPA-BEBES */
+    /*  -------------------------------------- ROPA-PETS */
+    .coleccion {
+        grid-template-columns: 50vw 50vw;
+    }
+
+
+    /*  ----------------------------------------------- ABOUT */
+    
+    .about .about-empresa {
+        margin-bottom: 20px !important;
+        flex-wrap: wrap-reverse;
+    }
+
+    .about .about-empresa .ab-emp-desc {
+        align-items: center;
+        text-align: center;
+        margin-left: 0 !important;
+    }
+
+    .about .about-empresa .ab-emp-img {
+        height: 350px;
+    }
+
+    .about .about-dev {
+        flex-wrap: wrap;
+    }
+
+    .about .about-dev .ab-dev-desc {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px !important;
+        margin-right: 0 !important;
+    }
+
+
+
+    /*  -------------------------------------------------------- LOGIN */
+
+    .login .login-reg .log-reg-form .lreg-form-inp {
+        margin-top: 15px !important; /* separador */
+    }
+
+
+
+    /*  Footer------------ */
+    footer {
+        padding: 15px 0 !important; /* espaciado arriba y abajo */
     }
 }
+
+
 
 
 
 @media screen and (max-width: 970px) {
 
     /*  ----------------------INDEX */
+    /* seccion hero */
     .hero .hero-desc h2 {
         font-size: 55px;
     }
@@ -62,6 +110,7 @@
     }
 
 
+    /* seccion intro */
     .intro .sub-intro {
         margin-top: 20px !important;
     }
@@ -75,28 +124,24 @@
     }
 
 
+    /* seccion collage */
     .collage .collage-grid {
         grid-template-columns: 1fr 1fr;
     }
 
 
-    /*  ----------------------------------------------- ABOUT */
-    .about .about-empresa {
-        margin-bottom: 20px !important;
+    /*  -------------------------------------------------------- LOGIN */
+
+    .login {
+        flex-direction: column;
     }
 
-    /*
-    .about .dev .dev-img {
-        height: 85%;
-    }
-    */
-
-
-    /*  Footer------------ */
-    footer {
-        padding: 15px 0 !important;
+    .login .login-sesion {
+        margin-bottom: 25px !important;
     }
 }
+
+
 
 
 @media screen and (max-width: 930px) {
@@ -193,31 +238,10 @@
         font-size: 20px;
     }
 
-
-    /*  ----------------------------------------------- ABOUT */
-    .about .about-empresa {
-        flex-wrap: wrap-reverse;
-    }
-
-    .about .about-empresa .ab-emp-desc {
-        align-items: center;
-        text-align: center;
-        margin-left: 0 !important;
-    }
-
-    .about .about-empresa .ab-emp-img {
-        height: 350px;
-    }
-
-    .about .about-dev {
-        flex-wrap: wrap;
-    }
-
-    .about .about-dev .ab-dev-desc {
-        align-items: center;
-        text-align: center;
-        margin-bottom: 20px !important;
-        margin-right: 0 !important;
+    /*  ------------------------------- ROPA-BEBES */
+    /*  -------------------------------------- ROPA-PETS */
+    .coleccion {
+        grid-auto-rows: 500px;
     }
 }
   
@@ -295,6 +319,12 @@
     .collage .collage-grid .collg-ropa-sr2 {
         grid-row: span 1;
     }
+
+
+
+    .login .login-reg .log-reg-form div {
+        width: 350px;
+    }
 }
 
 
@@ -318,7 +348,6 @@
 
     
     /*  ---------------------- INDEX */
-
     .collage h2 {
         font-size: 40px;
     }
@@ -330,10 +359,10 @@
 
 @media screen and (max-width: 750px) {
 
-
-    .todo-ropa {
-        grid-template-columns: 1fr;
-        grid-auto-rows: 500px;
+    /*  ------------------------------- ROPA-BEBES */
+    /*  -------------------------------------- ROPA-PETS */
+    .coleccion {
+        grid-auto-rows: 300px;
     }
 }
 
@@ -387,6 +416,31 @@
     .intro .sub-intro-rev .sub-intro-rev-desc p {
         font-size: 1em !important;
     }
+
+
+    /*  ------------------------------- ROPA-BEBES */
+    /*  -------------------------------------- ROPA-PETS */
+    .coleccion {
+        grid-template-columns: 100vw;
+        grid-auto-rows: 500px;
+    }
+
+    .coleccion .coleccion-prenda {
+        border-width: 0 0 15px 0;
+        border-style: solid;
+        border-color: #fff;
+    }
+
+    .coleccion .coleccion-prenda .col-prenda-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    /*  -------------------------------------------------------- LOGIN */
 
 
     /*  Footer------------ */
@@ -468,9 +522,24 @@
     }
 
 
+    /*  ------------------------------- ROPA-BEBES */
+    /*  -------------------------------------- ROPA-PETS */
 
-
+    .coleccion {
+        grid-template-columns: 100%;
+    }
     
+    .coleccion .coleccion-prenda {
+        border-width: 0;
+        border-style: none;
+    }
+
+}
+
+
+
+@media screen and (max-width: 580px) {
+
 }
 
 

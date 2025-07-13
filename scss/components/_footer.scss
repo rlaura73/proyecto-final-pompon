@@ -8,7 +8,7 @@ footer {
 
     /* distribucion de elementos iframe y div */
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 
     /* aplicar color */
@@ -61,7 +61,7 @@ footer {
             align-items: center;
             font-size: 45px;
 
-            
+
             /* para dar mas tamaño a un icono en particular */
             .f-links-ic-c {
                 font-size: 63px;
