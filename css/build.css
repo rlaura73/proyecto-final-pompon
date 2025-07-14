@@ -452,7 +452,7 @@ header nav ul .li-login {
 /* LOGIN */
 /* -----------------------------------------------------------------------------------------*/
 .login {
-  height: 500px;
+  height: 100vh;
   padding: 25px !important; /* separador de bordes */
   /* mini parallax */
   background-image: url(../img/a-body/body00.jpg);
@@ -739,6 +739,7 @@ footer .foot-links iframe {
   }
   /*  -------------------------------------------------------- LOGIN */
   .login {
+    height: 200vh;
     flex-direction: column;
   }
   .login .login-sesion {
